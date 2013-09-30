@@ -1,0 +1,79 @@
+<!-- $Id$ -->
+
+<h3>ITEM_LIST_TEMPLATE</h3>
+<em>This subpart is used to display the regular list of products. It's also used by search-results.</em>
+
+<!-- ###ITEM_LIST_GIFTS_TEMPLATE### begin -->
+
+
+
+		<!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+		<!-- ###ITEM_CATEGORY### begin -->
+		<!-- ###ITEM_CATEGORY### end -->
+		<!-- ###ITEM_LIST### begin -->
+		<!-- ###ITEM_SINGLE### begin-->
+		<!-- ###ITEM_SINGLE_PRE_HTML###-->
+
+
+		<form method="post" action="###FORM_URL###" name="###FORM_NAME###">
+
+
+			<div class="floatbox_LIST">
+
+				<h2 class="PRODUCT_TITLE_LIST">
+				 ###PRODUCT_TITLE###
+				</h2>
+				<div class="PRODUCT_SUBTITLE_LIST">
+				 ###PRODUCT_SUBTITLE###
+				</div>
+				<div class="product_image_list">
+				###PRODUCT_IMAGE1###
+				</div>
+
+
+				<div class="price_list">
+
+				<div class="web_price_LIST_tax">
+					<span id="###PRICE_TAX_ID###" class="fontcolor"> ###PRICE_TAX### ###P_CURRENCY###</span>
+				</div>
+
+				<div class="label_shipping_info">
+
+				<!-- ###PRODUCT_CATEGORY_EQ_9### begin -->
+				&nbsp;
+				<!-- ###PRODUCT_CATEGORY_EQ_9### end -->
+				</div>
+				</div>
+				<div class="qty_list">
+					<span class="qty-label-field-list"> ###LIST_ITEM_QUANTITY### <input size="2" maxlength="2" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
+					</span>
+					<input type="hidden" name="giftnumber" value="###GIFTNO###">
+					<input type="image" src="fileadmin/page/images/cart-add.png" name="basket" id="inputimage_cartadd" alt="###LIST_BUY_NOW###" title="###LIST_BUY_NOW###"  onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"/>
+				</div>
+
+
+
+			</div>
+
+		</form>
+
+		<!--###ITEM_SINGLE_POST_HTML###-->
+		<!-- ###ITEM_SINGLE### end -->
+		sender name:
+<input type="text" name="###FIELD_NAME_PERSON_NAME###" size="30" value="###GIFT_PERSON_NAME###">
+sender email:
+<input type="text" name="###FIELD_NAME_PERSON_EMAIL###" size="30" value="###GIFT_PERSON_EMAIL###">
+
+receiver name:
+<input type="text" name="###FIELD_NAME_DELIVERY_NAME###" size="30" value="###GIFT_DELIVERY_NAME###">
+receiver email:
+<input type="text" name="###FIELD_NAME_DELIVERY_EMAIL###" size="30" value="###GIFT_DELIVERY_EMAIL###">
+message:
+<textarea cols=30 rows=5 name="###FIELD_NAME_GIFT_NOTE###" wrap="off">###GIFT_NOTE###</textarea>
+		<!-- ###ITEM_LIST### end -->
+
+
+		<!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+<!-- ###ITEM_LIST_GIFTS_TEMPLATE### -->
+

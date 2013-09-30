@@ -1,0 +1,175 @@
+<!-- $Id$ -->
+
+<h3>BASKET_PAYMENT_TEMPLATE</h3>
+<em>Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.
+Exact same features as BASKET_TEMPLATE</em>
+
+
+<!-- ###BASKET_PAYMENT_TEMPLATE### begin
+Subpart used if the GPvar "products_payment" was set. This displays the final information about the order before the payment is initiated.
+Exact same features as BASKET_TEMPLATE
+-->
+
+
+
+###EXTERNAL_COBJECT###
+
+<div class="basket_payment">
+	<div class="text_bestellung_BASKET_PAYMENT_TEMPLATE1">
+		<h1>###ORDER_CONFIRMATION_YOUR_ORDER###</h1>
+    </div>
+	<div class="floatbox_BASKET_PAYMENT_TEMPLATE1">
+		<div id="text_produkte_BASKET_PAYMENT_TEMPLATE1">
+			###BASKET_HEADER_ITEM###
+		</div>
+		<div id="text_preis_BASKET_PAYMENT_TEMPLATE1">
+			###BASKET_HEADER_PRICE###
+		</div>
+		<div id="text_anzahl_BASKET_PAYMENT_TEMPLATE1">
+			###BASKET_HEADER_QUANTITY###
+		</div>
+		<div id="text_gesamt_BASKET_PAYMENT_TEMPLATE1">
+			###BASKET_HEADER_TOTAL###
+		</div>
+	</div>
+</div>
+
+  <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+  <!-- ###ITEM_CATEGORY### begin -->
+
+  <!-- ###ITEM_CATEGORY### end -->
+  <!-- ###ITEM_LIST### begin -->
+  <!-- ###ITEM_SINGLE### begin-->
+
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE2">
+	<div id="produkte_BASKET_PAYMENT_TEMPLATE2">
+		###PRODUCT_TITLE###
+	</div>
+	<div class="PRICE_TAX_BASKET2">
+		###PRODUCT_PRICE_TAX### ###P_CURRENCY###<br />
+	</div>
+	<div id="anzahl_BASKET_PAYMENT_TEMPLATE2">
+		###GW1B### ###FIELD_QTY### ###GW1E###
+	</div>
+	<div id="gesamt_BASKET_PAYMENT_TEMPLATE2">
+		###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+	</div>
+</div>
+
+  <!-- ###ITEM_SINGLE### end -->
+  <!-- ###ITEM_LIST### end -->
+  <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE3">
+	<div id="text_rechnungsanschrift_BASKET_PAYMENT_TEMPLATE3">
+		###BASKET_BILLING_ADDRESS###
+	</div>
+	<div id="PERSON_SALUTATION_BASKET_PAYMENT_TEMPLATE3">
+		 ###PERSON_SALUTATION###
+	</div>
+
+	<div id="PERSON_NAME_BASKET_PAYMENT_TEMPLATE3">
+		###PERSON_NAME###
+	</div>
+	<div id="PERSON_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE3">
+		###PERSON_ADDRESS_DISPLAY###
+	</div>
+	<div id="PERSON_CITY_BASKET_PAYMENT_TEMPLATE3">
+		###PERSON_ZIP### ###PERSON_CITY###
+	</div>
+
+	<div id="PERSON_TELEPHONE_BASKET_PAYMENT_TEMPLATE3">
+		###PERSON_TELEPHONE###
+	</div>
+	<div id="text_PERSON_EMAIL_BASKET_PAYMENT_TEMPLATE3">
+		###PERSON_EMAIL### <br />
+	</div>
+	<div id="text_email_BASKET_PAYMENT_TEMPLATE3">
+		###BASKET_PAYMENT_EMAIL_COMMENT###<br />
+	</div>
+</div>
+
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE4">
+	<div id="text_lieferanschrift_BASKET_PAYMENT_TEMPLATE4">
+		###BASKET_DELIVERY_ADDRESS###
+	</div>
+	<div id="DELIVERY_SALUTATION_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_SALUTATION###
+	</div>
+	<div id="DELIVERY_NAME_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_NAME###
+	</div>
+	<div id="DELIVERY_ADDRESS_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_ADDRESS_DISPLAY###
+	</div>
+	<div id="DELIVERY_ZIP_CITY_BASKET_PAYMENT_TEMPLATE4">
+	  ###DELIVERY_ZIP### ###DELIVERY_CITY###
+	</div>
+	<div id="DELIVERY_TELEPHONE_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_TELEPHONE### <br />
+	</div>
+	<div id="DELIVERY_EMAIL_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_EMAIL### <br />
+	</div>
+	<div id="text_DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
+		###BASKET_PAYMENT_SHIPPING_DATE###
+	</div>
+	<div id="DELIVERY_DESIRED_DATE_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_DESIRED_DATE###
+	</div>
+	<div id="text_DELIVERY_NOTE_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
+		###BASKET_PAYMENT_COMMENT###
+	</div>
+	<div id="DELIVERY_NOTE_DISPLAY_BASKET_PAYMENT_TEMPLATE4">
+		###DELIVERY_NOTE_DISPLAY###
+	</div>
+</div>
+
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE5">
+	<div id="text_delivery_BASKET_PAYMENT_TEMPLATE5">
+		###BASKET_SHIPPING_HANDLING### <br />
+	</div>
+	<div id="SHIPPING_TITLE_BASKET_PAYMENT_TEMPLATE5">
+		###SHIPPING_TITLE###
+	</div>
+	<div id="PRICE_SHIPPING_BASKET_PAYMENT_TEMPLATE5">
+		###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+	</div>
+</div>
+<div class="floatbox_BASKET_PAYMENT_TEMPLATE6">
+	<div id="text_zahlungsweise_BASKET_PAYMENT_TEMPLATE6">
+		###BASKET_PAYMENT###
+	</div>
+	<div id="PAYMENT_SELECTOR_BASKET_PAYMENT_TEMPLATE6">
+        ###PAYMENT_SELECTOR###
+    </div>
+	<div id="PRICE_PAYMENT_BASKET_PAYMENT_TEMPLATE6">
+		###PRICE_PAYMENT_TAX### ###P_CURRENCY###
+	</div>
+</div>
+	<div class="floatbox_BASKET_PAYMENT_TEMPLATE7">
+		<div id="text_PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7">
+			 ###BASKET_HEADER_TOTAL###
+		</div>
+		<div id="PRICE_TOTAL_BASKET_PAYMENT_TEMPLATE7" style="white-space:nowrap;">
+			###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+		</div>
+		<div id="text_TAX_BASKET_PAYMENT_TEMPLATE7">
+			 (###INCLUDED### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+		</div>
+
+		<div id="SUBMIT_BASKET_PAYMENT_TEMPLATE7">	<br />
+			<form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="paymentForm">
+			<input type="submit" id="button3" name="products_update" value="###BASKET_BACK_TO_CART###">
+			<input type="hidden" name="products_cmd" value="cardno" />
+			<input type="submit" id="button3" name="products_finalize" value="###BASKET_PLACE_ORDER###" onclick="this.form.action='###FORM_URL_FINALIZE###';" />
+			<!--<input type="submit" id="button3" name="products_finalize" value="###BASKET_PLACE_ORDER###" onclick="document.forms[0].action='###FORM_URL_THANKS###'; document.forms[0].target='###FORM_URL_TARGET###';">
+		-->
+		###HIDDENFIELDS###
+		</form>
+
+		</div>
+	</div>
+
+<!-- ###BASKET_PAYMENT_TEMPLATE### end -->
+

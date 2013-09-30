@@ -1,0 +1,119 @@
+<!-- $Id$ -->
+
+<!-- ###ITEM_SINGLE_DISPLAY### begin
+	This subpart is used to display single products.-->
+
+	<div class="tt_products_pagebrowser_single">
+
+	</div>
+	<div class="item_single_display">
+
+		<form method="post" name="###FORM_NAME###" action="###FORM_URL###">
+			<h1 class="PRODUCT_TITLE_SINGLE"><span class="###PRODUCT_TITLE_ID###">###PRODUCT_TITLE###</span>
+			</h1>
+
+			<div class="floatbox_SINGLE1">
+
+				<div class="product_single_image_id1">
+				 ###PRODUCT_IMAGE1###
+				</div>
+			</div>
+
+			<div class="floatbox_SINGLE2">
+
+				<h2 class="product_subtitle">
+					###PRODUCT_SUBTITLE###
+				</h2>
+				<!--
+				<div class="PRODUCT_ITEMNUMBER_ID">###LIST_ITEM_NUMBER### ###PRODUCT_ITEMNUMBER###</div>-->
+<!--
+				<div class="products_instock">###TT_PRODUCTS.INSTOCK### ###PRODUCT_INSTOCK### <span class="product_delivery">###PRODUCT_DELIVERY###</span></div>
+-->
+				<div id="web_price_SINGLE_vat">
+						###INCL_VAT###  <span id="###PRODUCT_PRICE2_TAX_ID###">###PRODUCT_PRICE### ###P_CURRENCY###</span>
+				</div>
+
+				<div class="intobasket">
+					<div class="qty_single">
+						###LIST_ITEM_QUANTITY### <input size="3" maxlength="2" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###">
+					</div>
+					<div class="cart_add_single">
+						<input type="image" src="fileadmin/page/images/cart-add.png" name="basket" id="inputimage" alt="In den Warenkorb" title="In den Warenkorb"  onClick="if(!document.forms['###FORM_NAME###']['###FIELD_NAME###'].value!=''){document.forms['###FORM_NAME###']['###FIELD_NAME###'].value=1;};"/>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="floatbox_SINGLE3">
+				<div class="product_note_single">
+					###PRODUCT_NOTE###
+				</div>
+
+
+				<div class="product_description">
+
+					<div class="product_description_title">###PRODUCT_NOTE_UID_1_title###</div>
+					<div class="product_description_bodytext">###PRODUCT_NOTE_UID_1_1_TEXT_bodytext###</div>
+					<div class="product_description_bodytext">###PRODUCT_NOTE_UID_1_2_TEXT_bodytext###</div>
+					<div class="product_description_bodytext">###PRODUCT_NOTE_UID_1_3_TEXT_bodytext###</div>
+					<div class="product_description_bodytext">###PRODUCT_NOTE_UID_1_4_TEXT_bodytext###</div>
+
+				</div>
+			</div>
+			<div class="image-mini">
+				<div class="single_images3_10">
+					<span class="single_image3">
+						###PRODUCT_IMAGE1:MINI###
+						</span>
+					<!--<span class="single_image4">
+						###PRODUCT_IMAGE2:MINI###
+					</span>-->
+					<span class="single_image5">
+						###PRODUCT_IMAGE3:MINI###
+					</span>
+					<span class="single_image6">
+						###PRODUCT_IMAGE4:MINI###
+					</span>
+					<span class="single_image7">
+						###PRODUCT_IMAGE5:MINI###
+					</span>
+					<span class="single_image8">
+						###PRODUCT_IMAGE6:MINI###
+					</span>
+					<span class="single_image9">
+						###PRODUCT_IMAGE7:MINI###
+					</span>
+					<span class="single_image10">
+						###PRODUCT_IMAGE8:MINI###
+					</span>
+				</div>
+			</div>
+
+			<div class="clearer"></div>
+
+
+			<div>
+				###ADDRESS_THOROUGHFARE###
+			</div>
+			<div id="PRODUCT_RELATED_UID_SINGLE">
+				###PRODUCT_RELATED_UID###
+			  	###PRODUCT_ACCESSORY_UID###
+			</div>
+
+		</form>
+	</div>
+	<div>
+		<div class="button_group">
+			<div class="SHOPADMIN_EMAIL_SINGLE">
+				<a href="mailto:###SHOPADMIN_EMAIL###?subject=###P_EMAIL_SUBJECT### ###PRODUCT_ITEMNUMBER###&amp;body=###P_EMAIL_BODY### ###PRODUCT_TITLE### %0A###P_EMAIL_QUESTION### ">###P_EMAIL###</a>  <br />
+			</div>
+			<div class="ttproducts_backtolist_single"><a href="javascript:history.back()">&laquo; ###LIST_BACK_TO_LIST###</a></div>
+		</div>
+
+	</div>
+
+
+
+
+
+<!-- ###ITEM_SINGLE_DISPLAY### end -->

@@ -1,0 +1,302 @@
+<!-- $Id$ -->
+
+<h3>BASKET_INFO_TEMPLATE</h3>
+<em>
+Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket.
+Exact same features as BASKET_TEMPLATE
+</em>
+
+<!-- ###BASKET_INFO_TEMPLATE### begin
+Subpart used if the GPvar "products_info" was set. This is normally used to let people enter address information separately from the real basket
+Exact same features as BASKET_TEMPLATE
+-->
+
+<form method="post" action="###FORM_URL###" name="###FORM_NAME###" id="registrationForm">
+	<div id="text_rechnungsanschrift_BASKETINFO">
+		###BASKET_BILLING_ADDRESS###:
+	</div>
+    <!-- ###BILLING_ADDRESS### start -->
+	<div id="text_BILLING_ADDRESS_BASKETINFO">
+		###BASKET_BILLING_ADDRESS_INPUT###
+	</div>
+
+	<div id="floatbox_BASKETINFO1">
+		<div id="label_COMPANY">
+			<strong>###BASKET_COMPANY###:</strong>
+		</div>
+		<div id="field_PERSON_NAME">
+			<input type="text" name="recs[personinfo][name]" value="###PERSON_COMPANY###">
+		</div>
+		<div id="label_PERSON_SALUTATION">
+			<strong>###BASKET_SALUTATION###:</strong>
+		</div>
+		<div id="field_PERSON_SALUTATION">
+			###GW1B######PERSON_SALUTATION######GW1E###
+		</div>
+		<div id="label_PERSON_NAME">
+			<strong>###BASKET_NAME###:<span class="mandatory">*</span></strong>
+		</div>
+		<div id="field_PERSON_NAME">
+			<input type="text" name="recs[personinfo][name]" value="###PERSON_NAME###">
+		</div>
+		<div id="label_PERSON_ADDRESS">
+			<strong>###BASKET_ADDRESS###:<span class="mandatory">*</span></strong>
+		</div>
+		<div id="field_PERSON_ADDRESS">
+			<input type="text" name="recs[personinfo][address]" value="###PERSON_ADDRESS###">
+		</div>
+		<div id="label_PERSON_ZIP">
+			<strong>###BASKET_ZIP###:<span class="mandatory">*</span> </strong>
+		</div>
+		<div id="field_PERSON_ZIP">
+			<input type="text" name="recs[personinfo][zip]" value="###PERSON_ZIP###">
+		</div>
+		<div id="label_PERSON_CITY">
+			<strong>###BASKET_CITY###:<span class="mandatory">*</span></strong>
+		</div>
+		<div id="field_PERSON_CITY">
+			<input type="text" name="recs[personinfo][city]" value="###PERSON_CITY###">
+		</div>
+		<div id="label_PERSON_COUNTRY_CODE">
+			<strong>###BASKET_COUNTRY###:<span class="mandatory">* </span></strong>
+		</div>
+		<div id="field_PERSON_COUNTRY_CODE">
+			###PERSON_COUNTRY_CODE###
+		</div>
+		<div id="label_PERSON_TELEPHONE">
+			<strong>###BASKET_PHONE###:<span class="mandatory">*</span></strong>
+		</div>
+		<div id="field_PERSON_TELEPHONE">
+			<input type="text" name="recs[personinfo][telephone]"  value="###PERSON_TELEPHONE###">
+		</div>
+		<div id="label_PERSON_EMAIL">
+			<strong>###BASKET_EMAIL###:<span class="mandatory">*</span></strong>
+		</div>
+		<div id="field_PERSON_EMAIL">
+			<input type="text" name="recs[personinfo][email]" value="###PERSON_EMAIL###">
+		</div>
+		<div id="label_BASKET_VAT_ID">
+		<strong>###BASKET_VAT_ID###:</strong>
+		</div>
+		<div id="field_BASKET_VAT_ID">
+			<input type="text" name="recs[personinfo][tt_products_vat]" value="###PERSON_TT_PRODUCTS_VAT###">
+		</div>
+
+		<div id="text_hinweis_BASKETINFO_ACCOUNTS">
+		 ###BASKET_INFO_ACCOUNTS###
+		</div>
+
+		<div id="label_BASKET_ACCOUNTS_OWNWER_NAME">
+		<strong>###LABEL_PERSON_ACCOUNTS_OWNER_NAME###:</strong>
+		</div>
+		<div id="field_BASKET_ACCOUNTS_OWNWER_NAME">
+			<input type="text" name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###">
+		</div>
+		<div id="label_BASKET_PERSON_ACCOUNTS_AC_NUMBER">
+		<strong>###LABEL_PERSON_ACCOUNTS_AC_NUMBER###:</strong>
+		</div>
+		<div id="field_BASKET_PERSON_ACCOUNTS_AC_NUMBER">
+			<input type="text" name="recs[account][ac_number]" value="###PERSON_ACCOUNTS_AC_NUMBER###">
+		</div>
+		<div id="label_BASKET_PERSON_ACCOUNTS_BIC">
+		<strong>###LABEL_PERSON_ACCOUNTS_BIC###:</strong>
+		</div>
+		<div id="field_BASKET_PERSON_ACCOUNTS_BIC">
+			<input type="text" name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###">
+		</div>
+	</div>
+
+
+  <div id="text_hinweis_BASKETINFO">
+
+     ###BASKET_INFO_TEXT###
+
+  </div>
+
+
+  <!-- ###BILLING_ADDRESS### end-->
+  <!-- ###BILLING_ADDRESS_LOGIN### start
+  If this part is not empty then this will be used instead of BILLING_ADDRESS if there is a FE-login user.-->
+
+  <div id="floatbox_BASKETINFO2">
+  	<div id="label_COMPANY2">
+     <strong>###BASKET_COMPANY###:</strong>
+    </div>
+	 <div id="field_COMPANY">
+      ###GW1B######PERSON_COMPANY######GW1E###
+    </div>
+	<div id="label_PERSON_SALUTATION2">
+      <strong>###BASKET_SALUTATION###:</strong>
+    </div>
+	<div id="field_PERSON_SALUTATION2">
+      ###GW1B######PERSON_SALUTATION######GW1E###
+    </div>
+
+    <div id="label_PERSON_NAME2">
+     <strong>###BASKET_NAME###:</strong>
+    </div>
+    <div id="field_PERSON_NAME2">
+      ###GW1B######PERSON_NAME######GW1E###
+    </div>
+    <div id="label_PERSON_ADDRESS2">
+      <strong>###BASKET_ADDRESS_LOGIN###:</strong>
+    </div>
+    <div id="field_PERSON_ADDRESS2">
+      ###GW1B######PERSON_ADDRESS_DISPLAY######GW1E###
+    </div>
+
+    <div id="label_PERSON_TELEPHONE2">
+      <strong>###BASKET_PHONE###:</strong>
+    </div>
+    <div id="field_PERSON_TELEPHONE2">
+      ###GW1B######PERSON_TELEPHONE######GW1E###
+    </div>
+    <div id="label_PERSON_EMAIL2">
+      <strong>###BASKET_EMAIL###:</strong>
+    </div>
+    <div id="field_PERSON_EMAIL2">
+      ###GW1B######PERSON_EMAIL######GW1E###
+    </div>
+	<div id="label_BASKET_VAT_ID2">
+	 <strong>###BASKET_VAT_ID###:</strong>
+	</div>
+	<div id="field_BASKET_VAT_ID2">
+	  ###GW1B######PERSON_TT_PRODUCTS_VAT######GW1E###
+	</div>
+	<div id="label_login_BASKET_ACCOUNTS_OWNER_NAME">
+		<strong>###LABEL_PERSON_ACCOUNTS_OWNER_NAME###:</strong>
+	</div>
+	<div id="field_login_BASKET_ACCOUNTS_OWNER_NAME">
+			<input type="text" name="recs[account][owner_name]" value="###PERSON_ACCOUNTS_OWNER_NAME###">
+	</div>
+	<div id="label_login_BASKET_PERSON_ACCOUNTS_AC_NUMBER">
+		<strong>###LABEL_PERSON_ACCOUNTS_AC_NUMBER###:</strong>
+	</div>
+	<div id="field_login_BASKET_PERSON_ACCOUNTS_AC_NUMBER">
+			<input type="text" name="recs[account][ac_number]" value="###PERSON_ACCOUNTS_AC_NUMBER###">
+	</div>
+	<div id="label_login_BASKET_PERSON_ACCOUNTS_BIC">
+		<strong>###LABEL_PERSON_ACCOUNTS_BIC###:</strong>
+	</div>
+	<div id="field_login_BASKET_PERSON_ACCOUNTS_BIC">
+			<input type="text" name="recs[account][bic]" value="###PERSON_ACCOUNTS_BIC###">
+	</div>
+  </div>
+
+    <!-- ###BILLING_ADDRESS_LOGIN### end-->
+
+
+  <div id="floatbox_BASKETINFO3">
+    <div id="text_DELIVERY_ADDRESS_BASKETINFO">
+		###BASKET_DELIVERY_ADDRESS###:
+    </div>
+    <div id="textinfo_DELIVERY_ADDRESS_BASKETINFO">
+
+		###BASKET_SHIPPING_INFORMATION###
+
+    </div>
+
+
+	<div id="label_DELIVERY_COMPANY">
+	<strong>###BASKET_COMPANY###:</strong>
+    </div>
+    <div id="field_COMPANY">
+		<input type="text" name="recs[personinfo][company]" value="###PERSON_COMPANY###">
+    </div>
+	<div id="label_DELIVERY_SALUTATION">
+	<strong>###BASKET_SALUTATION###:</strong>
+    </div>
+    <div id="field_DELIVERY_SALUTATION">
+      ###GW1B### ###DELIVERY_SALUTATION### ###GW1E###
+    </div>
+    <div id="label_DELIVERY_NAME">
+   <strong>###BASKET_NAME###:</strong>
+    </div>
+    <div id="field_DELIVERY_NAME">
+      <input type="text" name="recs[delivery][name]" value="###DELIVERY_NAME###">
+    </div>
+    <div id="label_DELIVERY_ADDRESS">
+      <strong>###BASKET_ADDRESS###:</strong>
+    </div>
+	<div id="field_DELIVERY_ADDRESS">
+      <textarea name="recs[delivery][address]" >###PERSON_ADDRESS_DISPLAY###</textarea>
+    </div>
+	<div id="label_PERSON_ZIP">
+		<strong>###BASKET_ZIP###:</strong>
+	</div>
+	<div id="field_DELIVERY_ZIP">
+      <input type="text" name="recs[delivery][zip]" value="###DELIVERY_ZIP###">
+    </div>
+	<div id="label_PERSON_CITY">
+		<strong>###BASKET_CITY###:</strong>
+	</div>
+	 <div id="field_DELIVERY_CITY">
+      <input type="text" name="recs[delivery][city]" value="###DELIVERY_CITY###">
+    </div>
+    <div id="label_DELIVERY_TELEPHONE">
+      <strong>###BASKET_PHONE###:</strong>
+    </div>
+    <div id="field_DELIVERY_TELEPHONE">
+      <input type="text" name="recs[delivery][telephone]" value="###DELIVERY_TELEPHONE###">
+    </div>
+    <div id="label_DELIVERY_EMAIL">
+     <strong>###BASKET_EMAIL###:</strong>
+    </div>
+    <div id="field_DELIVERY_EMAIL">
+      <input type="text" name="recs[delivery][email]" value="###DELIVERY_EMAIL###">
+    </div>
+    <div id="label_DELIVERY_DESIRED_DATE">
+      <strong> ###BASKET_PAYMENT_SHIPPING_DATE###</strong>
+    </div>
+    <div id="field_DELIVERY_DESIRED_DATE">
+      <input name="recs[delivery][desired_date]" value="###DELIVERY_DESIRED_DATE###">
+    </div>
+
+    <div id="label_DELIVERY_NOTE">
+    <strong> ###BASKET_PAYMENT_COMMENT###</strong>
+    </div>
+    <div id="field_DELIVERY_NOTE">
+      <textarea name="recs[delivery][note]">###DELIVERY_NOTE###</textarea>
+    </div>
+
+    <div id="text_agb_BASKETINFO">
+
+      ###BASKET_TERMS_ACK###<br /><br />
+
+      <input type="checkbox" class="check_agb" name="recs[personinfo][agb]" value="###PERSON_AGB###" />
+      <span class="products_linkagb"> <!--###LINK_AGB###--> ###BASKET_TERMS### <!--###LINK_AGB###--></span> ###BASKET_TERMS_AND### <span class="products_linkrevocation"><!--###LINK_REVOCATION### -->###BASKET_RIGHT_OF_REVOCATION### <!--###LINK_REVOCATION### --></span>###BASKET_TERMS_READ###
+    </div>
+    <div class="button_group">
+      <input type="submit" id="button5" name="products_update" value="###BASKET_BACK_TO_CART###" />
+      <input type="submit" id="button4" name="products_payment" value="###BASKET_PAYMENT_CHECKOUT###" onclick="this.form.action='###FORM_URL_PAYMENT###';" />
+		###HIDDENFIELDS###
+	</div>
+  </div>
+
+</form>
+
+
+  <!-- ###BASKET_INFO_TEMPLATE### end -->
+
+
+
+<!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
+	<div class="minibasket">
+
+
+	    <!--###LINK_BASKET###-->
+		<p class="basket_mini_header">###BASKET_MINI_HEADER###</p>
+
+		<p class="basket_mini_item">###NUMBER_GOODSTOTAL### ###BASKET_MINI_ITEM### (###PRICE_GOODSTOTAL_TAX### ###P_CURRENCY###)</p>
+
+
+	  <!--###LINK_BASKET###-->
+	</div>
+	<!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
+
+	<!-- ###BASKET_OVERVIEW_EMPTY### begin -->
+	<div class="minibasket">
+		<p class="basket_mini_header">###BASKET_MINI_HEADER###</p>
+		<p class="basket_mini_item">###BASKET_MINI_EMPTY###</p>
+	</div>
+	<!-- ###BASKET_OVERVIEW_EMPTY### end -->

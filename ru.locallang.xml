@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Russion texts for the markers</description>
+		<type>module</type>
+		<csh_table></csh_table>
+		<fileId>EXT:addons_tt_products/ru.locallang.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="ru" type="array">
+		    <label index="memo_dam_goto">Идти в список DAM memo.</label>
+			<label index="basket_goto">Перейти к корзине.</label>
+			<label index="basket_into">В корзину.</label>
+			<label index="basket_into_input_type">Подтвердить</label>
+			<label index="basket_mini_empty">Нет товара в корзине</label>
+			<label index="basket_mini_item">Товар</label>
+			<label index="basket_mini_notax">без НДС:</label>
+			<label index="basket_mini_tax">вкл. НДС:</label>
+			<label index="basket_mini_header">Карта заказа:</label>
+			<label index="basket_empty">Карта заказа пустая!</label>
+			<label index="basket_billing_address">Адрес платежа</label>
+			<label index="basket_billing_address_input">Пожалуйста введите Ваш адрес.</label>
+			<label index="basket_billing_address_input_delivery">Вы можете ввести разные адреса получателя.</label>
+			<label index="basket_delivery_address">Адрес отправки</label>
+			<label index="basket_info_text"> Пожалуйста заполниет все поля, помеченные "*" </label>
+			<label index="basket_name">Фамилия</label>
+			<label index="basket_title">Должность</label>
+			<label index="basket_company">Фирма</label>
+			<label index="basket_address">Адрес</label>
+			<label index="basket_zip">Индекс</label>
+			<label index="basket_city">Город</label>
+			<label index="basket_country">Страна</label>
+			<label index="basket_phone">Телефон</label>
+			<label index="basket_email">Email</label>
+			<label index="basket_zip_city">Индекс / Город</label>
+			<label index="basket_fe_username">Имя пользователя</label>
+			<label index="basket_fe_user_id">ID пользователя</label>
+			<label index="basket_update_cart">Обновить карту</label>
+			<label index="basket_empty_cart">Пустая карта</label>
+			<label index="basket_checkout">Пройти к расчету</label>
+			<label index="basket_back_to_cart">Вернуться к карте</label>
+			<label index="basket_place_order">Заказ</label>
+			<label index="basket_header_item">Наименование</label>
+			<label index="basket_header_quantity">Количество</label>
+			<label index="basket_header_price">Цена</label>
+			<label index="basket_header_total">Всего</label>
+			<label index="basket_shipping_handling">Доставка и упаковка:</label>
+			<label index="basket_payment_checkout">Пройти к расчету</label>
+			<label index="basket_payment_select">Выбрать платеж:</label>
+			<label index="basket_payment">Платеж:</label>
+			<label index="basket_payment_total">Всего:</label>
+			<label index="basket_payment_invoice">Счет:</label>
+			<label index="basket_payment_memo">Память:</label>
+			<label index="basket_payment_shipping_date">Дата доставки:</label>
+			<label index="basket_payment_comment">Комментарии:</label>
+			<label index="basket_payment_email_comment">(На это почтовый адрес прийдет подтверждение!)</label>
+			<label index="basket_payment_add_comment">Вы можете передать сообщение:</label>
+			<label index="basket_payment_select_payment">Пожалуйста выберите способ доставки и упаковки.</label>
+			<label index="basket_shipping_price">Доставка:</label>
+			<label index="basket_terms_ack">Вы должны подтвердить условия поставки!</label>
+			<label index="basket_terms">"Условия поставки"</label>
+			<label index="basket_terms_read">Я прочитал и с условиями согласен.</label>
+			<label index="basket_required_message_error">Ошибка</label>
+			<label index="basket_required_message_missing">Вы не заполнили все необходимые поля или не подвердили согласие с условиями постаки!</label>
+			<label index="basket_required_message_fix">Пожалуйста вернитесь для обновления!</label>
+			<label index="basket_required_button_fix">Полная информация</label>
+			<label index="basket_delete_item">Для удаления товара из списка, измените количество на "0" и обновите карту!</label>
+			<label index="basket_change_item">Для изменения колличества товара, измените позицию Колличество и обновите карту!</label>
+			<label index="basket_shipping_information">Информация о поставке</label>
+
+			<label index="vat">НДС:</label>
+			<label index="no_vat">без НДС:</label>
+			<label index="incl_vat">с НДС</label>
+			<label index="plus">плюс</label>
+			<label index="shipping">доставка</label>
+
+			<label index="p_currency">EUR</label>
+			<label index="p_color">Цвет</label>
+			<label index="p_color2">Цвет 2</label>
+			<label index="p_color3">Цвет 3</label>
+			<label index="p_color4">Цвет 4</label>
+			<label index="p_color5">Цвет 5</label>
+			<label index="p_size">Размер</label>
+			<label index="p_width">Ширина</label>
+			<label index="p_height">Высота</label>
+			<label index="p_gradings">Тара</label>
+			<label index="p_description">Описание</label>
+			<label index="p_material">Материал</label>
+			<label index="p_quality">Качество</label>
+			<label index="p_datasheet">Данные:</label>
+			<label index="p_www">Страница производителя:</label>
+			<label index="p_email">e-mail запрос по этому товару</label>
+			<label index="p_email_body">Я выбрал следующие товары:</label>
+			<label index="p_email_subject">E-mail к этому товару:</label>
+			<label index="p_email_question">мой вопрос:</label>
+			<label index="p_is_single">возможна только одна позиция</label>
+			<label index="p_related">Соответствующие товары</label>
+
+			<label index="list_buy_now">КУПИТЬ</label>
+			<label index="list_detail">детали</label>
+			<label index="list_next_page">следующая страница</label>
+			<label index="list_prev_page">предыдущая страница</label>
+			<label index="list_back_to_list">вернуться к списку</label>
+			<label index="list_item_number">Номерт товара:</label>
+			<label index="list_item_price">Цена:</label>
+			<label index="list_item_quantity">Колличество:</label>
+
+			<label index="search_item_notfound">Товар не найден!</label>
+			<label index="search_button">поиск</label>
+			<label index="error_not_logged_in">Вы не зарегестрированы.</label>
+
+			<label index="sellers_salutation">С наилучшими пожеланиями,</label>
+			<label index="sellers_company"></label>
+			<label index="sellers_name"> </label>
+			<label index="sellers_address"></label>
+			<label index="sellers_city">    </label>
+			<label index="sellers_country">Deutschland</label>
+			<label index="sellers_phone">Tel.: +49 </label>
+			<label index="sellers_fax">Fax.: +49 </label>
+			<label index="sellers_hrb">Register court: </label>
+			<label index="sellers_executive">Executive: </label>
+			<label index="sellers_vat_id"></label>
+
+			<label index="order_confirmation">Подтверждение заказа</label>
+			<label index="order_confirmation_thanks">Спасибо за Ваш заказ!</label>
+			<label index="order_confirmation_complete">Ваш заказ завершен и имеет номер:</label>
+			<label index="order_confirmation_email">Это пожтверждение будет выслано на почтовый адрес:</label>
+			<label index="order_confirmation_payment">Платеж:</label>
+			<label index="order_confirmation_10">После консультации</label>
+			<label index="order_confirmation_10_text">Please contacПожалуйста свяжитесь с нами!</label>
+			<label index="order_confirmation_20">Предварительная оплата:</label>
+			<label index="order_confirmation_20_text">Пожалуйста переведите сумму на этот счет:</label>
+			<label index="order_confirmation_20_owner">Владелец счета: </label>
+			<label index="order_confirmation_20_account">Номер счета:</label>
+			<label index="order_confirmation_20_bank_no">Номер банка BLZ: </label>
+			<label index="order_confirmation_20_bank">Bank: </label>
+			<label index="order_confirmation_20_bic">BIC: :</label>
+			<label index="order_confirmation_20_iban">IBAN: </label>
+			<label index="order_confirmation_30">Вся сумма:</label>
+			<label index="order_confirmation_30_text">Заказ будет выслан на Ваш адрес. Оплата получена.</label>
+			<label index="order_confirmation_40">Счет:</label>
+			<label index="order_confirmation_40_text">Заказанный товар выслан Вам.</label>
+			<label index="order_confirmation_50">Наличные:</label>
+			<label index="order_confirmation_50_text">Мы принимаем оплату до отсылки товара!</label>
+			<label index="order_confirmation_delivery_order_status">Статус заказа и отправки:</label>
+			<label index="order_confirmation_goods_remain">Товар принадлежит продавцу до поступления полной оплаты.</label>
+			<label index="order_confirmation_date_of_order">Дата заказа:</label>
+			<label index="order_confirmation_view_status_with_code">Вы можете проверить статус заказа, используя код заказа:</label>
+			<label index="order_confirmation_check_order_status">Проверка статуса заказа!</label>
+			<label index="order_confirmation_order_status">СТАТУС ЗАКАЗА:</label>
+			<label index="order_confirmation_status_address">Вы можете проверить статус заказа по этой ссылке:</label>
+			<label index="order_confirmation_your_order">Ваш заказ:</label>
+
+			<label index="order_confirmation_order_uid">Пожалуйста Ваш номер заказа:</label>
+
+			<label index="order_status_wrong_number">Этот номер не существует! Пожалуйста проверьте номер и введите еще раз</label>
+			<label index="order_status_view">смотреть статус заказа</label>
+
+			<label index="tracking_status_order">Ваш заказ #:</label>
+			<label index="tracking_status_status">имеет следующий статус:</label>
+			<label index="tracking_status_status_text">(смотрите последнюю по дате информацию)</label>
+			<label index="tracking_status_date">Дата/Время:</label>
+			<label index="tracking_status_code">Код:</label>
+			<label index="tracking_status_action">Действие:</label>
+			<label index="tracking_status_comment">Комментарии:</label>
+			<label index="tracking_status_choose_order">Выбрать заказ</label>
+			<label index="tracking_status_choose_order_button">выбрать</label>
+			<label index="tracking_status_change">изменить статус заказа</label>
+			<label index="tracking_status_change_button">Добавить в заказ</label>
+			<label index="tracking_status_order_comment">Комментарии к новому статусу</label>
+			<label index="tracking_status_password">Пароль:</label>
+			<label index="tracking_status_password_button">подтвердить пароль</label>
+			<label index="tracking_status_email">сообщение на E-mail:</label>
+			<label index="tracking_status_email_text">Если Вы проверяете статус Вашего заказа и видите, что статус изменился, пожалуйста проверьте следующее:</label>
+			<label index="tracking_status_email_checkbox">Будет получено сообщение о завершении оформления заказа.</label>
+			<label index="tracking_status_email_button">Обновить</label>
+			<label index="tracking_status_message">Сообщение в магазин:</label>
+			<label index="tracking_status_message_text">Здесь Вы можете послать сообщение продавцу о Вашем заказе.</label>
+			<label index="tracking_status_message_subject">Выбрать:</label>
+			<label index="tracking_status_message_50">Сообщение от продавца:</label>
+			<label index="tracking_status_message_51">Продавец ждет подтверждение отказа от заказа</label>
+			<label index="tracking_status_message_subject_comment">Примеч.:</label>
+			<label index="tracking_status_message_button">Послать сообщение</label>
+			<label index="tracking_status_order_original">Подтверждение заказа - оригинал:</label>
+			<label index="tracking_status_number">Код статуса заказа:</label>
+			<label index="tracking_status_number_button">Статус посмотреть</label>
+
+			<label index="tracking_email_status_label">Статус заказа</label>
+			<label index="tracking_email_status">Статус:</label>
+			<label index="tracking_email_time">Время:</label>
+			<label index="tracking_email_info">Информация</label>
+			<label index="tracking_email_comment">Примеч.:</label>
+			<label index="tracking_email_status_view">Нажмите здесь, чтобы посмотеть данные:</label>
+			<label index="tracking_email_status_changed">Статус Вашего заказа изменен:</label>
+			<label index="tracking_email_view_information">Используя код статуса, Вы всегда можете изменить посмотреть и изменить информацию по заказу:</label>
+
+			<label index="new_user_name">Ваше имя пользователя:</label>
+			<label index="new_user_password">Ваш пароль:</label>
+			<label index="new_user_access_data">Ваши данные для входа</label>
+			<label index="new_user_welcome">Мы рады приветствовать Вас как нашего нового клиента.</label>
+			<label index="new_user_login">В будущем вы можете заходить, используя эти данные для оформления нового заказа.</label>
+			<label index="new_user_keep_email">Пожалуйста, сохраняйте это письмо.</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

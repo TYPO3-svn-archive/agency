@@ -1,0 +1,311 @@
+<!-- $Id$ -->
+
+<h3>BASKET_TEMPLATE</h3>
+<em>
+Subpart used to display the content of the shopping basket.
+The product list part has the exact same features as the regular LIST_ITEM_TEMPLATE subpart.
+In addition there's a number of fields used for delivery and payment information.
+</em>
+
+  <!-- ###BASKET_TEMPLATE_EMPTY### begin
+  If the basket is empty this subpart is displayed -->
+
+  <div class="BASKET_TEMPLATE_EMPTY">
+   ###BASKET_EMPTY###
+  </div>
+
+  <!-- ###BASKET_TEMPLATE_EMPTY### end -->
+
+  <!-- ###BASKET_REQUIRED_INFO_MISSING### begin
+  If payment is initiated but the required information fields are not filled in correctly, this happens-->
+
+  <div class="BASKET_REQUIRED_INFO_MISSING">
+  ###GW1B### ###BASKET_REQUIRED_MESSAGE_ERROR###<br /><br />
+  ###GW1E###<p>###GW1B### ###BASKET_REQUIRED_MESSAGE_MISSING### <br /> ###ERROR_DETAILS###</p><br />
+  <p>###BASKET_REQUIRED_MESSAGE_FIX######GW1E###<br />
+
+    <form method="post" action="###FORM_URL###">
+    <input type="submit" class="button2_fix" name="products_info" value="###BASKET_REQUIRED_BUTTON_FIX###" onclick="document.forms[0].action='###FORM_URL_INFO###';">
+    </form>
+  </div>
+
+  <!-- ###BASKET_REQUIRED_INFO_MISSING### end -->
+
+
+<!-- ###BASKET_TEMPLATE###
+Subpart used to display the content of the shopping basket.
+The product list part has the exact same features as the regular LIST_ITEM_TEMPLATE subpart.
+In addition there's a number of fields used for delivery and payment information. -->
+
+<div class="basket">
+  ###EXTERNAL_COBJECT###
+  <form method="post" action="###FORM_URL###">
+    <div class="floatbox_BASKET">
+      <div id="text_Produkt">###BASKET_HEADER_ITEM###</div>
+      <div id="text_Einzelpreis">###BASKET_HEADER_PRICE###</div>
+      <div id="text_Anzahl">###BASKET_HEADER_QUANTITY###</div>
+      <div id="text_Gesamt">###BASKET_HEADER_TOTAL###</div>
+    </div>
+
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+    <!-- ###ITEM_CATEGORY### begin -->
+    <br />###CATEGORY_TITLE###<br />
+
+    <!-- ###ITEM_CATEGORY### end -->
+    <!-- ###ITEM_LIST### begin -->
+    <!-- ###ITEM_SINGLE### begin-->
+    <div class="floatbox_BASKET2">
+      <div class="PRODUCT_TITLE_BASKET2">
+
+    ###PRODUCT_TITLE###
+      </div>
+
+      <div class="PRICE_TAX_BASKET2">
+        ###PRODUCT_PRICE### ###P_CURRENCY###<br />
+      </div>
+      <div class="FIELD_QTY_BASKET2">
+        <input size="2" maxlength="2" type="text" name="###FIELD_NAME_BASKET###" value="###FIELD_QTY###">
+      </div>
+      <div class="PRICE_TOTAL_TAX_BASKET2">
+         ###PRICE_TOTAL_TAX### ###P_CURRENCY###<br />
+      </div>
+	  <div class="voucher_prices">
+    ###BASKET_VOUCHER###
+    ###BASKET_VOUCHER_PRICE_ACT###
+    ###BASKET_VOUCHER_WRONG_CODE###
+    ###BASKET_VOUCHER_DONE###
+    ###BASKET_VOUCHER_CALCULATE###
+
+    </div>
+	</div>
+
+
+      <!-- ###ITEM_SINGLE### end -->
+      <!-- ###ITEM_LIST### end -->
+      <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+###HIDDENFIELDS###
+
+    <div id="text_versand_BASKET2">
+      ###BASKET_SHIPPING_HANDLING###
+    </div>
+    <div id="text_pauschale_BASKET2">
+
+    </div>
+
+    <div class="floatbox_BASKET3">
+    <div id="SHIPPING_SELECTOR_BASKET3">
+      ###GW1B######SHIPPING_SELECTOR######GW1E###
+    </div>
+    <div id="PRICE_SHIPPING_TAX_BASKET3">
+     ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+    </div>
+  </div>
+    <div class="MESSAGE_SHIPPING_BASKET4">
+      <!-- ###MESSAGE_SHIPPING###
+      This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
+      -->
+
+      <!-- ###MESSAGE_SHIPPING_10### -->
+      <p>###TEXT_MESSAGE_SHIPPING_10###</p>
+      <!-- ###MESSAGE_SHIPPING_10### -->
+
+      <!-- ###MESSAGE_SHIPPING_20### -->
+      <p>###TEXT_MESSAGE_SHIPPING_20###</p>
+      <!-- ###MESSAGE_SHIPPING_20### -->
+
+       <!-- ###MESSAGE_SHIPPING_30### -->
+      <p>###TEXT_MESSAGE_SHIPPING_30###</p>
+      <!-- ###MESSAGE_SHIPPING_30### -->
+
+       <!-- ###MESSAGE_SHIPPING_40### -->
+      <p>###TEXT_MESSAGE_SHIPPING_40###</p>
+      <!-- ###MESSAGE_SHIPPING_40### -->
+
+      <!-- ###MESSAGE_SHIPPING_50### -->
+      <p>###TEXT_MESSAGE_SHIPPING_50###</p>
+      <!-- ###MESSAGE_SHIPPING_50### -->
+
+      <!-- ###MESSAGE_SHIPPING_60### -->
+      <p>###TEXT_MESSAGE_SHIPPING_60###</p>
+      <!-- ###MESSAGE_SHIPPING_60### -->
+
+      <!-- ###MESSAGE_SHIPPING_70### -->
+      <p>###TEXT_MESSAGE_SHIPPING_70###</p>
+      <!-- ###MESSAGE_SHIPPING_70### -->
+
+      <!-- ###MESSAGE_SHIPPING_80### -->
+      <p>###TEXT_MESSAGE_SHIPPING_80###</p>
+      <!-- ###MESSAGE_SHIPPING_80### -->
+
+      <!-- ###MESSAGE_SHIPPING_90### -->
+      <p>###TEXT_MESSAGE_SHIPPING_90###</p>
+      <!-- ###MESSAGE_SHIPPING_90### -->
+
+      <!-- ###MESSAGE_SHIPPING_100### -->
+      <p>###TEXT_MESSAGE_SHIPPING_100###</p>
+      <!-- ###MESSAGE_SHIPPING_100### -->
+
+      <!-- ###MESSAGE_SHIPPING_110### -->
+      <p>###TEXT_MESSAGE_SHIPPING_110###</p>
+      <!-- ###MESSAGE_SHIPPING_110### -->
+
+      <!-- ###MESSAGE_SHIPPING_120### -->
+      <p>###TEXT_MESSAGE_SHIPPING_120###</p>
+      <!-- ###MESSAGE_SHIPPING_120### -->
+
+      <!-- ###MESSAGE_SHIPPING_130### -->
+      <p>###TEXT_MESSAGE_SHIPPING_130###</p>
+      <!-- ###MESSAGE_SHIPPING_130### -->
+
+      <!-- ###MESSAGE_SHIPPING### -->
+    </div>
+
+
+
+
+    <div id="text_zahlungsweise_BASKET4">
+      ###BASKET_PAYMENT###
+    </div>
+
+    <div class="floatbox_BASKET4">
+      <div id="PAYMENT_SELECTOR_BASKET4">
+        ###PAYMENT_SELECTOR######GW1E###
+      </div>
+      <div id="TAX_INCL_EXCL_BASKET4">
+        ###PRICE_PAYMENT_TAX### ###P_CURRENCY###
+    </div>
+    </div>
+
+
+  <div class="MESSAGE_PAYMENT_BASKET4">
+        <!-- ###MESSAGE_PAYMENT###
+        This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'
+        -->
+
+      <!-- ###MESSAGE_PAYMENT_10### -->
+      <p>###TEXT_MESSAGE_PAYMENT_10###</p>
+      <!-- ###MESSAGE_PAYMENT_10### -->
+
+      <!-- ###MESSAGE_PAYMENT_20### -->
+      <p>###TEXT_MESSAGE_PAYMENT_20### </p>
+      <!-- ###MESSAGE_PAYMENT_20### -->
+
+      <!-- ###MESSAGE_PAYMENT_30### -->
+      <p>###TEXT_MESSAGE_PAYMENT_30###</p>
+      <!-- ###MESSAGE_PAYMENT_30### -->
+
+      <!-- ###MESSAGE_PAYMENT_40### -->
+      <p>###TEXT_MESSAGE_PAYMENT_40###</p>
+      <!-- ###MESSAGE_PAYMENT_40### -->
+
+      <!-- ###MESSAGE_PAYMENT_50### -->
+      <p>###TEXT_MESSAGE_PAYMENT_50###</p>
+      <!-- ###MESSAGE_PAYMENT_50### -->
+
+      <!-- ###MESSAGE_PAYMENT_60### -->
+      <p>###TEXT_MESSAGE_PAYMENT_60###</p>
+      <!-- ###MESSAGE_PAYMENT_60### -->
+
+      <!-- ###MESSAGE_PAYMENT_70### -->
+      <p>###TEXT_MESSAGE_PAYMENT_70###</p>
+      <!-- ###MESSAGE_PAYMENT_70### -->
+
+      <!-- ###MESSAGE_PAYMENT_80### -->
+      <p>###TEXT_MESSAGE_PAYMENT_80###</p>
+      <!-- ###MESSAGE_PAYMENT_80### -->
+
+      <!-- ###MESSAGE_PAYMENT_90### -->
+      <p>###TEXT_MESSAGE_PAYMENT_90###</p>
+      <!-- ###MESSAGE_PAYMENT_90### -->
+
+      <!-- ###MESSAGE_PAYMENT_100### -->
+      <p>###TEXT_MESSAGE_PAYMENT_100###</p>
+      <!-- ###MESSAGE_PAYMENT_100### -->
+
+        <!-- ###MESSAGE_PAYMENT### -->
+
+    </div>
+
+    <div class="floatbox_BASKET5">
+	<div class="voucher_code">
+  <form name="VoucherForm" >
+
+                   <!-- ###SUB_VOUCHERCODE_START### begin -->
+                    Voucher:
+                    <input name="###INSERT_VOUCHERCODE###" type="text" class="field" value="###VALUE_VOUCHERCODE###">
+                    <input name="products_basket" type="submit" class="buttonsmall" value="einl&ouml;sen" />
+                    <!-- ###SUB_VOUCHERCODE_START### end -->
+
+                    <!-- ###SUB_VOUCHERCODE_NODISCOUNT### begin -->
+                    <!-- ###SUB_VOUCHERCODE_NODISCOUNT### end -->
+
+                    <!-- ###SUB_VOUCHERCODE_DISCOUNT### begin -->
+                    <div class="basket-total">
+                    Gutschein Rabatt:
+                    - ###VOUCHER_DISCOUNT### ###P_CURRENCY###
+                    </div>
+                    <!-- ###SUB_VOUCHERCODE_DISCOUNT### end -->
+
+                    <!-- ###SUB_VOUCHERCODE_DISCOUNTWRONG### begin -->
+                    <br />Der Gutschein-Code ist falsch. Versuchen Sie es erneut.
+                    <!-- ###SUB_VOUCHERCODE_DISCOUNTWRONG### end -->
+
+
+                 <!-- ###SUB_VOUCHERCODE### begin -->
+                   Sie haben bereits einen Gutschein eingel&ouml;st.
+                 <!-- ###SUB_VOUCHERCODE### end -->
+   </form>
+</div>
+    <div id="text_gesamt_BASKET5">
+      ###BASKET_HEADER_TOTAL###
+    </div>
+    <div id="TEXT_PRICE_GOODS_TOTAL_BASKET5">
+      ###BASKET_PRICE_GOODS_TOTAL###
+    </div>
+      <div id="PRICE_GOODSTOTAL_BASKET5">
+      ###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+    </div>
+    <div id="TEXT_PRICE_TOTAL_BASKET5">
+      ###BASKET_PRICE_TOTAL###
+    </div>
+    <div id="PRICE_TOTAL_BASKET5">
+      ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+        </div>
+    <div class="price_only_tax">
+      <div id="TEXT_ONLY_TAX_BASKET5">
+        ###VAT###
+      </div>
+      <div id="PRICE_TAX_BASKET5">
+        ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###
+      </div>
+    </div>
+
+
+    <!--###MESSAGE_MINPRICE_ERROR### begin-->
+      <div class="message_minprice_error">###BASKET_MINPRICE_ERROR### </div>
+    <!--###MESSAGE_MINPRICE_ERROR### end-->
+
+    <div class="button_group">
+      <input type="hidden" name="mode_update" value="1">
+
+      <input type="submit" id="button3" name="products_update" value="###BASKET_UPDATE_CART###">
+      <!--###MESSAGE_MINPRICE### begin -->
+        <input type="submit" id="button3" name="products_clear_basket" value="###BASKET_EMPTY_CART###">
+        <input type="submit" id="button3" name="products_checkout" value="###BASKET_CHECKOUT###" onclick="this.form.action='###FORM_URL_INFO###';">
+      <!--###MESSAGE_MINPRICE### end -->
+    </div>
+  </div>
+
+
+
+  </form>
+
+
+
+
+
+
+</div>
+
+<!-- ###BASKET_TEMPLATE### end -->

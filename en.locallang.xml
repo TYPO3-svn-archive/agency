@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>texts for the markers, originally created by POB EDV-Systeme, (c) 2009, usable with the example_locallang_xml.html Template</description>
+		<type>module</type>
+		<csh_table></csh_table>
+		<fileId>EXT:addons_tt_products/en.locallang.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="en" type="array">
+			<label index="memo_dam_goto">Go to the DAM memo list.</label>
+			<label index="basket_goto">Go to the basket.</label>
+			<label index="basket_into">Into the basket.</label>
+			<label index="basket_into_input_type">submit</label>
+			<label index="basket_mini_empty">no items in cart</label>
+			<label index="basket_mini_item">Items</label>
+			<label index="basket_mini_notax">w/o VAT:</label>
+			<label index="basket_mini_tax">incl. VAT:</label>
+			<label index="basket_mini_header">Shopping cart:</label>
+			<label index="basket_empty">Shopping cart is empty!</label>
+			<label index="basket_billing_address">Billing address</label>
+			<label index="basket_billing_address_input">Please enter your Address.</label>
+			<label index="basket_billing_address_input_delivery">You can also enter a different delivery Address.</label>
+			<label index="basket_delivery_address">Delivery address</label>
+			<label index="basket_info_text"> Please fill out all fields market with a "*" </label>
+			<label index="basket_cnum">Customer Number</label>
+			<label index="basket_name">Name</label>
+			<label index="basket_first_name">First Name</label>
+			<label index="basket_last_name">Last Name</label>
+			<label index="basket_title">Title</label>
+			<label index="basket_company">Company</label>
+			<label index="basket_address">Address</label>
+			<label index="basket_date_of_birth">Date of birth</label>
+			<label index="basket_zip">Zip</label>
+			<label index="basket_city">City</label>
+			<label index="basket_country">Country</label>
+			<label index="basket_phone">Phone</label>
+			<label index="basket_email">Email</label>
+			<label index="basket_zip_city">ZIP / City</label>
+			<label index="basket_fe_username">Username</label>
+			<label index="basket_fe_user_id">User ID</label>
+			<label index="basket_update_cart">Update Cart</label>
+			<label index="basket_empty_cart">Empty Cart</label>
+			<label index="basket_checkout">Proceed to Checkout</label>
+			<label index="basket_back_to_cart">Back to Cart</label>
+			<label index="basket_place_order">Place Order</label>
+			<label index="basket_enter_vat_id">Enter your valid VAT Reg. No.:</label>
+			<label index="basket_vat_id">VAT Reg. No.</label>
+			<label index="basket_header_item">Item</label>
+			<label index="basket_header_quantity">Quantity</label>
+			<label index="basket_header_price">Price</label>
+			<label index="basket_header_total">Total</label>
+			<label index="basket_shipping_handling">Shipping and handling:</label>
+			<label index="basket_payment_checkout">Proceed to Payment</label>
+			<label index="basket_payment_select">Select payment:</label>
+			<label index="basket_payment">Payment:</label>
+			<label index="basket_payment_total">Total:</label>
+			<label index="basket_payment_invoice">Invoice:</label>
+			<label index="basket_payment_memo">Memo:</label>
+			<label index="basket_payment_shipping_date">Desired delivery date:</label>
+			<label index="basket_payment_comment">Comment:</label>
+			<label index="basket_payment_email_comment">(To this email address your order confirmation will be sent!)</label>
+			<label index="basket_payment_add_comment">You can leave us a Message:</label>
+			<label index="basket_payment_select_payment">Please choose shipping and handling.</label>
+			<label index="basket_shipping_price">Shipping:</label>
+			<label index="basket_terms_ack">Terms and Conditions must be accepted!</label>
+			<label index="basket_terms">"Terms and Conditions"</label>
+			<label index="basket_terms_read">I have read and hereby acknowledge them.</label>
+			<label index="basket_required_message_error">Error</label>
+			<label index="basket_required_message_missing">You do not have all the required fields with your address information filled in, or the terms are not accepted!</label>
+			<label index="basket_required_message_fix">Please go back to refresh!</label>
+			<label index="basket_required_button_fix">Correct information</label>
+			<label index="basket_delete_item">To delete an Item, please change the quantity value to "0" and update the cart!</label>
+			<label index="basket_change_item">To change the number of items in the cart, change the quantity value and update the cart!</label>
+			<label index="basket_shipping_information">Shipping information</label>
+
+			<label index="vat">VAT:</label>
+			<label index="no_vat">wo VAT:</label>
+			<label index="incl_vat">incl. VAT</label>
+			<label index="plus">plus</label>
+			<label index="shipping">shipping</label>
+
+			<label index="p_currency">EUR</label>
+			<label index="p_color">Color:</label>
+			<label index="p_color2">Color2:</label>
+			<label index="p_color3">Color3:</label>
+			<label index="p_color4">Color4:</label>
+			<label index="p_color5">Color5:</label>
+			<label index="p_size">Size:</label>
+			<label index="p_width">Width:</label>
+			<label index="p_height">Height:</label>
+			<label index="p_gradings">Gradings:</label>
+			<label index="p_description">Description:</label>
+			<label index="p_material">Material:</label>
+			<label index="p_quality">Quality:</label>
+			<label index="p_datasheet">Datasheet:</label>
+			<label index="p_www">Manufacturer Website:</label>
+			<label index="p_email">e-mail request to the article</label>
+			<label index="p_email_body">I have seen the following article:</label>
+			<label index="p_email_subject">E-mail inquiry to the article:</label>
+			<label index="p_email_question">my questions:</label>
+			<label index="p_is_single">only one Item is possible</label>
+
+			<label index="list_buy_now">BUY NOW</label>
+			<label index="list_detail">details</label>
+			<label index="list_next_page">next page</label>
+			<label index="list_prev_page">previous page</label>
+			<label index="list_back_to_list">back to List</label>
+			<label index="list_item_number">Item number:</label>
+			<label index="list_item_price">Price:</label>
+			<label index="list_item_quantity">Quantity:</label>
+
+			<label index="search_item_notfound">No Items found!</label>
+			<label index="search_button">search</label>
+			<label index="error_not_logged_in">You are not logged in.</label>
+
+			<label index="sellers_salutation">With best regards,</label>
+			<label index="sellers_company">Company</label>
+			<label index="sellers_name">Sellers Name </label>
+			<label index="sellers_address">Sellers street</label>
+			<label index="sellers_city">Sellers ZIP and City</label>
+			<label index="sellers_country">Sellers Country</label>
+			<label index="sellers_phone">Tel.:</label>
+			<label index="sellers_fax">Fax.: </label>
+			<label index="sellers_hrb">Sellers HRB</label>
+			<label index="sellers_executive">Sellers executive</label>
+			<label index="sellers_vat_id">Sellers VAT ID</label>
+
+			<label index="order_confirmation">Order Confirmation</label>
+			<label index="order_confirmation_thanks">Thank you for your order!</label>
+			<label index="order_confirmation_complete">Your order is now complete and has the following Ordernumber:</label>
+			<label index="order_confirmation_email">The confirmation will be sent to following email address:</label>
+			<label index="order_confirmation_payment">Payment:</label>
+			<label index="order_confirmation_10">After consultation</label>
+			<label index="order_confirmation_10_text">Please contact us!</label>
+			<label index="order_confirmation_20">Prepayment:</label>
+			<label index="order_confirmation_20_text">Please transfer the amount invoiced to the following account:</label>
+			<label index="order_confirmation_20_owner">Kontoinhaber: </label>
+			<label index="order_confirmation_20_account">Kontonummer:</label>
+			<label index="order_confirmation_20_bank_no">BLZ: </label>
+			<label index="order_confirmation_20_bank">Bank: </label>
+			<label index="order_confirmation_20_bic">BIC: :</label>
+			<label index="order_confirmation_20_iban">IBAN: </label>
+			<label index="order_confirmation_30">Cash on collection:</label>
+			<label index="order_confirmation_30_text">The goods will be sent to you directly. You pay for the goods received.</label>
+			<label index="order_confirmation_40">Invoice:</label>
+			<label index="order_confirmation_40_text">The ordered goods will be sent to account.</label>
+			<label index="order_confirmation_50">Cash:</label>
+			<label index="order_confirmation_50_text">We only accept cash for pickup!</label>
+			<label index="order_confirmation_delivery_order_status">Delivery and Order Status:</label>
+			<label index="order_confirmation_goods_remain">The goods remain until full payment of our property.</label>
+			<label index="order_confirmation_date_of_order">Date of Order:</label>
+			<label index="order_confirmation_view_status_with_code">You can take your order status at any time using your order status codes:</label>
+			<label index="order_confirmation_check_order_status">Check Order Status!</label>
+			<label index="order_confirmation_order_status">ORDER STATUS:</label>
+			<label index="order_confirmation_status_address">You can check the status of your order at this address, see:</label>
+			<label index="order_confirmation_your_order">Your Order:</label>
+
+			<label index="order_confirmation_order_uid">Please specify your ordernumber is essential:</label>
+
+			<label index="order_status_wrong_number">The order status code does not exist! Please ensure accuracy and try again</label>
+			<label index="order_status_view">view order status</label>
+
+			<label index="tracking_status_bill">Your bill #:</label>
+			<label index="tracking_status_order">Your order #:</label>
+			<label index="tracking_status_status">has the following status:</label>
+			<label index="tracking_status_status_text">(see last line for updated data)</label>
+			<label index="tracking_status_data">Additional tracking data:</label>
+			<label index="tracking_status_date">Date/Time:</label>
+			<label index="tracking_status_code">Code:</label>
+			<label index="tracking_status_action">Action:</label>
+			<label index="tracking_status_comment">Comment:</label>
+			<label index="tracking_status_choose_order">Choose order</label>
+			<label index="tracking_status_choose_order_button">choose</label>
+			<label index="tracking_status_change">Change order status</label>
+			<label index="tracking_status_change_button">Add order status</label>
+			<label index="tracking_status_order_comment">Commentary on the new order status</label>
+			<label index="tracking_status_password">Password:</label>
+			<label index="tracking_status_password_button">submit password</label>
+			<label index="tracking_status_email">E-mail notification:</label>
+			<label index="tracking_status_email_text">If you check the status of your order information as soon the status has changed, then please check the following:</label>
+			<label index="tracking_status_email_checkbox">Message about the end of the ordering process will receive.</label>
+			<label index="tracking_status_email_button">Update</label>
+			<label index="tracking_status_message">Message to SHOP:</label>
+			<label index="tracking_status_message_text">Here you can send us a message about your order.</label>
+			<label index="tracking_status_message_subject">Select subject:</label>
+			<label index="tracking_status_message_1">Order submitted by user</label>
+			<label index="tracking_status_message_2">Order is received and accepted by store</label>
+			<label index="tracking_status_message_10">Shop is awaiting goods from third-party</label>
+			<label index="tracking_status_message_11">Shop is awaiting customer payment</label>
+			<label index="tracking_status_message_12">Shop is awaiting material from customer</label>
+			<label index="tracking_status_message_13">Order has been paid</label>
+			<label index="tracking_status_message_20">Goods shipped to customer</label>
+			<label index="tracking_status_message_21">Gift certificates shipped to customer</label>
+			<label index="tracking_status_message_30">Other message from store</label>
+			<label index="tracking_status_message_31">Bill has been generated</label>
+			<label index="tracking_status_message_32">Bill has been sent</label>
+			<label index="tracking_status_message_33">This order is to be considered tax free.</label>
+			<label index="tracking_status_message_50">Customer request for cancelling</label>
+			<label index="tracking_status_message_51">Message from customer to shop</label>
+			<label index="tracking_status_message_52">Customer request for a taxed bill</label>
+			<label index="tracking_status_message_53">Customer request for a tax free billing</label>
+			<label index="tracking_status_message_60">Send gift certificate message to receiver</label>
+			<label index="tracking_status_message_100">Order shipped</label>
+			<label index="tracking_status_message_101">Order closed</label>
+			<label index="tracking_status_message_200">Order cancelled</label>
+			<label index="tracking_status_message_subject_comment">Remark:</label>
+			<label index="tracking_status_message_button">Send message</label>
+			<label index="tracking_status_order_original">Order confirmation - Original:</label>
+			<label index="tracking_status_number">Order status code:</label>
+			<label index="tracking_status_number_button">Show status</label>
+
+			<label index="tracking_email_status_label">Order Status</label>
+			<label index="tracking_email_status">Status:</label>
+			<label index="tracking_email_time">Time:</label>
+			<label index="tracking_email_info">Order Information</label>
+			<label index="tracking_email_comment">Remark:</label>
+			<label index="tracking_email_status_view">Click here to view your data:</label>
+			<label index="tracking_email_status_changed">The status of your order has been changed:</label>
+			<label index="tracking_email_view_information">With your order status code, you can always view and possibly change the ordering information:</label>
+
+			<label index="new_user_name">Your user name is:</label>
+			<label index="new_user_password">Your password is:</label>
+			<label index="new_user_access_data">Your access data for</label>
+			<label index="new_user_welcome">We are looking forward to welcoming you as our new customer.</label>
+			<label index="new_user_login">In future you can log in with your user name and password to order.</label>
+			<label index="new_user_keep_email">Please keep this e-mail well.</label>
+		</languageKey>
+	</data>
+</T3locallang>

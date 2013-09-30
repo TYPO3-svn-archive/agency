@@ -1,0 +1,251 @@
+# set the TYPO3 language to german
+config.language = de
+# set the PHP locale to german
+config.locale_all = de_DE
+[global]
+
+
+#####tt_Products
+plugin.tt_products.conf.tt_products.ALL.requiredFields = uid,pid,category,price,price2,directcost,graduated_price_uid,tax_id,inStock
+[usergroup = 1]
+plugin.tt_products.priceNoReseller = 2
+[global]
+
+plugin.tt_products.alwaysInStock = 1
+#plugin.tt_products.NoSingleViewOnList = 0
+#plugin.tt_products.orderBy = sorting, tstamp
+#plugin.tt_products.email_notify_default = 1
+plugin.tt_products.conf.tt_products.LIST.orderBy = sorting
+plugin.tt_products.conf.tt_products.ALL.orderBy = sorting
+plugin.tt_products.conf.tt_products.OFFER.orderBy = tstamp desc
+plugin.tt_products.conf.tt_products_cat.ALL.orderBy = sorting
+#plugin.tt_products.pidsRelatedProducts = 1
+#plugin.tt_products.TAXincluded = 0
+#plugin.tt_products.AGBattachment = agb.pdf
+
+plugin.tt_products.statusCodes {
+    1 = Bestellung vom Kunden bestätigt
+    2 = Bestellung ist vom Shop erhalten und akzeptiert worden
+    10 = Wir warten auf Waren von einem Lieferanten
+    11 = Wir warten auf die Bezahlung durch den Kunden
+    13 = Die Bestellung wurde bezahlt
+    50 = Meldung vom Kunden
+    51 = Kunde wünscht storno der Bestellung
+    52 = Meldung an den Kunden
+    100 = Bestellung versendet und geschlossen
+    101 = Bestellung geschlossen
+    200 = Bestellung gelöscht
+}
+
+
+
+## EXAMPLE payment config:
+plugin.tt_products.payment {
+  radio = 1
+  TAXpercentage = 19
+##  10.title = MasterCard
+##  10.image.file = typo3/sysext/cms/tslib/media/logos/mastercard.gif
+##  10.priceTax =
+##  10.calculationScript = EXT:tt_products/pi1/products_comp_calcScript.inc
+
+  10.title = Nach Absprache / International
+  10.image.file =
+  10.price =
+
+  20.title = Vorkasse
+  20.image.file = typo3/sysext/cms/tslib/media/logos/money.gif
+  20.price =
+
+
+#  30.title = Nachnahme
+#  30.image.file = typo3/sysext/cms/tslib/media/logos/nachnahme.gif
+#  30.price = 8.50
+#  30.TAXincluded = 1
+
+  40.title = Rechnung (nur gewerbliche Kunden!)
+  40.image.file = typo3/sysext/cms/tslib/media/logos/rechnung.gif
+  40.price =
+
+
+  50.title = Barzahlung
+  50.image.file = typo3/sysext/cms/tslib/media/logos/money.gif
+  50.price =
+}
+
+## EXAMPLE shipping config:
+plugin.tt_products.shipping {
+  TAXpercentage = 19
+  10.title = Paketdienst
+  10.image.file = typo3/sysext/cms/tslib/media/logos/pakketrans.gif
+  10.image.params = align=absmiddle
+#  10.price.type = count
+#  10.price.noCostsAmount = 238
+#  10.price.1 = 7.14
+  10.excludePayment = 10,50
+
+10.priceTax.type = weight
+
+#10.priceTax = 6.90
+
+10.priceTax.1 = 4.9
+10.priceTax.3500 = 6.9
+10.priceTax.5000 = 10.4
+10.priceTax.7500 = 15.2
+10.priceTax.9000 = 16.7
+10.priceTax.10000 = 20.7
+10.priceTax.15000 = 25.2
+10.priceTax.20000 = 29.6
+10.priceTax.25000 = 34.1
+10.priceTax.30000 = 38.6
+10.priceTax.35000 = 43
+10.priceTax.40000 = 47.5
+10.priceTax.45000 = 51.9
+10.priceTax.50000 = 56.4
+10.priceTax.55000 = 60.9
+10.priceTax.60000 = 65.3
+10.priceTax.65000 = 69.8
+10.priceTax.70000 = 74.3
+10.priceTax.75000 = 78.7
+10.priceTax.80000 = 83.2
+10.priceTax.85000 = 87.6
+10.priceTax.90000 = 92.1
+10.priceTax.95000 = 96.6
+10.priceTax.100000 = 101
+10.priceTax.110000 = 110
+10.priceTax.120000 = 118.9
+10.priceTax.130000 = 127.8
+10.priceTax.140000 = 136.7
+10.priceTax.150000 = 145.7
+10.priceTax.160000 = 154.6
+10.priceTax.170000 = 163.5
+10.priceTax.180000 = 172.4
+10.priceTax.190000 = 181.4
+10.priceTax.200000 = 190.3
+10.priceTax.210000 = 199.2
+10.priceTax.220000 = 208.1
+10.priceTax.230000 = 217.1
+10.priceTax.240000 = 226
+10.priceTax.250000 = 234.9
+
+
+#  TAXpercentage = 19
+#  20.title = Nachnahme
+#  20.image.file = typo3/sysext/cms/tslib/media/logos/pakketrans.gif
+#  20.image.params = align=absmiddle
+#  20.priceTax = 8.50
+#  20.excludePayment = 10,20,40,50
+
+  TAXpercentage = 19
+  30.title = Nach Absprache / International
+  30.image.file =
+  30.image.params = align=absmiddle
+  30.price = 0
+  30.excludePayment = 20,30,40,50
+
+
+
+
+
+##  20.title = Airmail
+##  20.image.file = typo3/sysext/cms/tslib/media/logos/postdanmark.gif
+##  20.image.params = align=absmiddle
+##  20.priceTax = 120
+
+  40.title = Abholung
+  40.excludePayment = 10,30
+}
+
+
+config.linkVars = L
+
+# UID für Deutsch festlegen
+config.sys_language_uid = 0
+config.language = de
+config.locale_all = de_DE
+
+#English language, sys_language.uid = 2
+[globalVar = GP:L = 2]
+config.sys_language_uid = 2
+config.language = en
+
+plugin.tt_products.statusCodes {
+# 1: Incoming orders
+    1 = Order submitted by user
+# 2-49: Useable by the shop admin
+    2 = Order is received and accepted by store
+    10 = Shop is awaiting goods from third-party
+    11 = Shop is awaiting customer payment
+    13 = Order has been paid
+    50 = Message from customer to shop
+    51 = Customer request for cancelling
+    52 = Message to customer
+# 100-299 : Order finalized.
+    100 = Order shipped and closed
+    101 = Order closed
+    200 = Order cancelled
+  }
+
+
+
+## EXAMPLE payment config:
+plugin.tt_products.payment {
+  10.title = International
+
+  20.title = Prepaid
+
+#  30.title = pay cash on delivery
+#  30.image.file = typo3/sysext/cms/tslib/media/logos/nachnahme.gif
+#  30.price = 8.50
+#  30.TAXincluded = 1
+
+  40.title = Invoice
+#  40.image.file = typo3/sysext/cms/tslib/media/logos/rechnung.gif
+#  40.price =
+
+  50.title = Cash
+#  50.image.file = typo3/sysext/cms/tslib/media/logos/money.gif
+#  50.price =
+}
+
+## EXAMPLE shipping config
+:
+plugin.tt_products.shipping {
+  TAXpercentage = 19
+  10.title = Parcel service
+
+#  TAXpercentage = 19
+#  20.title = pay cash on delivery
+#  20.image.file = typo3/sysext/cms/tslib/media/logos/pakketrans.gif
+#  20.image.params = align=absmiddle
+#  20.priceTax = 8.50
+
+  TAXpercentage = 19
+  30.title = International
+#  30.image.file =
+#  30.image.params = align=absmiddle
+#  30.price = 0
+
+##  20.title = Airmail
+##  20.image.file = typo3/sysext/cms/tslib/media/logos/postdanmark.gif
+##  20.image.params = align=absmiddle
+##  20.priceTax = 120
+
+  40.title = Pick up
+
+}
+
+
+#French language, sys_language.uid = 3
+[globalVar = GP:L = 3]
+config.sys_language_uid = 3
+config.language = fr
+
+#Spanish language, sys_language.uid = 4
+[globalVar = GP:L = 4]
+config.sys_language_uid = 4
+config.language = es
+
+
+
+
+

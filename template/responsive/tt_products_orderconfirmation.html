@@ -1,0 +1,425 @@
+<!-- $Id$ -->
+
+<h3>BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE</h3>
+<em>Wie BASKET_ORDERCONFIRMATION_TEMPLATE, aber wird nicht in der Datenbank gespeichert. Hier kann Code fr externe Systeme eingefgt werden, der nicht mit angezeigt werden darf, wenn die Seite im Trackingmodus nochmal dargestellt wird.</em>
+
+<!-- ###BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE### begin -->
+
+<!-- ###BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE### end -->
+
+<!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### begin
+Subpart used if the order is finalized and this is thus the confirmation shown.-->
+
+<h1 class="ORDER_CONFIRMATION">###ORDER_CONFIRMATION###</h1>
+	<div id="text_dank_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_THANKS### <br /><br />
+		###ORDER_CONFIRMATION_COMPLETE###
+	</div>
+	<div id="ORDER_UID_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_UID###
+	</div>
+	<!--<div>###ORDER_TRACKING_NO###</div>.
+	###CLICK_HERE###<a href="index.php?id=###PID_TRACKING###&type=0&tracking=###ORDER_TRACKING_NO###">###SEE_STATUS###.</a>
+-->
+	<div id="header_zahlungsart_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_PAYMENT###
+	</div>
+
+    <!-- ###MESSAGE_PAYMENT###
+	 This whole subpart, message_payment is substituted with the subpart 'message_payment_[number-of-method-in-typoscript]'-->
+
+	<!-- ###MESSAGE_PAYMENT_10### begin Message for payment method 10, Rechnung -->
+	<div id="header_zahlungsart_rechnung_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_10###
+	</div>
+	<div id="text_zahlungsart_rechnung_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_10_TEXT###
+	</div>
+	<!-- ###MESSAGE_PAYMENT_10### end -->
+
+	<!-- ###MESSAGE_PAYMENT_20### begin -->
+	<div id="header_zahlungsart_selbstabholer_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_20###
+	</div>
+	<div id="text_zahlungsart_selbstabholer_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_20_TEXT###
+	</div>
+    <!-- ###MESSAGE_PAYMENT_20### end -->
+
+    <!-- ###MESSAGE_PAYMENT_30### begin -->
+	<div id="header_zahlungsart_nachnahme_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_30###
+	</div>
+	<div id="text_zahlungsart_nachnahme_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_30_TEXT###
+	</div>
+    <!-- ###MESSAGE_PAYMENT_30### end -->
+
+	<!-- ###MESSAGE_PAYMENT_40### begin Message for payment method 40,  -->
+	<div id="header_zahlungsart_paypal_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_40###
+	</div>
+	<div id="text_zahlungsart_paypal_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_40_TEXT###
+	</div>
+    <!-- ###MESSAGE_PAYMENT_40### end -->
+
+	<!-- ###MESSAGE_PAYMENT_50### begin Message for payment method 50, toll -->
+	<div id="header_zahlungsart_toll_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_50###
+	</div>
+	<!-- ###MESSAGE_PAYMENT_50### end -->
+
+	<!-- ###MESSAGE_PAYMENT_60### begin Message for payment method 60, toll -->
+	<div id="header_zahlungsart_toll_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_60###
+	</div>
+	<!-- ###MESSAGE_PAYMENT_60### end -->
+
+	<!-- ###MESSAGE_PAYMENT_70### begin -->
+
+
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_xclick">
+			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="item_name" value="###ORDER_UID###">
+			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
+			<input type="hidden" name="no_note" value="1">
+			<input type="hidden" name="currency_code" value="EUR">
+			<input type="hidden" name="lc" value="DE">
+			<input type="hidden" name="tax" value="###PRICE_PAYMENT_TAX###">
+			<input type="hidden" name="shipping" value="###PRICE_SHIPPING_TAX###">
+			<input type="hidden" name="cancel_return" value="http://www.mydrap-shop.de/index.php?id=334">
+			<input type="hidden" name="return" value="http://www.mydrap-shop.de/index.php?id=333">
+
+			<input type="submit" name="submit" id="button2" value="Bezahlung mit Kreditkarte via PayPal" alt="Bezahlen mit Kreditkarte via PayPal">
+		</form>
+    <!-- ###MESSAGE_PAYMENT_70### end -->
+
+		<!-- ###MESSAGE_PAYMENT_80### begin -->
+
+
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_xclick">
+			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="item_name" value="###ORDER_UID###">
+			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
+			<input type="hidden" name="no_note" value="1">
+			<input type="hidden" name="currency_code" value="EUR">
+			<input type="hidden" name="lc" value="DE">
+			<input type="hidden" name="tax" value="###PRICE_PAYMENT_TAX###">
+			<input type="hidden" name="shipping" value="###PRICE_SHIPPING_TAX###">
+			<input type="hidden" name="cancel_return" value="http://www.mydrap-shop.de/index.php?id=334">
+			<input type="hidden" name="return" value="http://www.mydrap-shop.de/index.php?id=333">
+
+			<input type="submit" name="submit" id="button2" value="Bezahlung mit Kreditkarte via PayPal" alt="Bezahlen mit Kreditkarte via PayPal">
+		</form>
+    <!-- ###MESSAGE_PAYMENT_80### end -->
+
+			<!-- ###MESSAGE_PAYMENT_90### begin -->
+
+
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_xclick">
+			<input type="hidden" name="business" value="c.peiniger@profino.net">
+			<input type="hidden" name="item_name" value="###ORDER_UID###">
+			<input type="hidden" name="amount" value="###PRICE_GOODSTOTAL_TAX###">
+			<input type="hidden" name="no_note" value="1">
+			<input type="hidden" name="currency_code" value="EUR">
+			<input type="hidden" name="lc" value="DE">
+			<input type="hidden" name="tax" value="###PRICE_PAYMENT_TAX###">
+			<input type="hidden" name="shipping" value="###PRICE_SHIPPING_TAX###">
+			<input type="hidden" name="cancel_return" value="http://www.mydrap-shop.de/index.php?id=334">
+			<input type="hidden" name="return" value="http://www.mydrap-shop.de/index.php?id=333">
+
+			<input type="submit" name="submit" id="button2" value="Bezahlung mit Kreditkarte via PayPal" alt="Bezahlen mit Kreditkarte via PayPal">
+		</form>
+    <!-- ###MESSAGE_PAYMENT_90### end -->
+
+    <!-- ###MESSAGE_PAYMENT### -->
+
+	<div id="header_lieferstatus__BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_DELIVERY_ORDER_STATUS###
+	</div>
+	<div id="text_lieferstatus_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_GOODS_REMAIN###
+	</div>
+	<div id="bestelldatum_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		###ORDER_CONFIRMATION_DATE_OF_ORDER### ###ORDER_DATE###<br />
+	</div>
+	<div id="link_PID_TRACKING_TRACKING_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		<a href="index.php?id=###PID_TRACKING###&amp;type=0&amp;tracking=###ORDER_TRACKING_NO###"></a>
+	</div>
+
+    ###GW1E### ###EXTERNAL_COBJECT###
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE1">
+		<div id="text_produkte_BASKET_ORDERCONFIRMATION_TEMPLATE1">
+			###BASKET_HEADER_ITEM###
+		</div>
+		<div id="text_anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE1">
+			###BASKET_HEADER_QUANTITY###
+		</div>
+		<div id="text_gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE1">
+			###BASKET_HEADER_TOTAL###
+		</div>
+	</div>
+
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### begin -->
+    <!-- ###ITEM_CATEGORY### begin -->
+
+    <!-- ###ITEM_CATEGORY### end -->
+    <!-- ###ITEM_LIST### begin -->
+    <!-- ###ITEM_SINGLE### begin -->
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+		<div id="produkte_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+			###PRODUCT_TITLE###
+		</div>
+		<div id="anzahl_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+			 ###FIELD_QTY###
+		</div>
+		<div id="gesamt_BASKET_ORDERCONFIRMATION_TEMPLATE2">
+			###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+		</div>
+	</div>
+
+    <!-- ###ITEM_SINGLE### end -->
+    <!-- ###ITEM_LIST### end -->
+    <!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+		<div id="text_rechnungsanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			###BASKET_BILLING_ADDRESS###
+		</div>
+		<div id="PERSON_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			<strong>###PERSON_SALUTATION###</strong>
+		</div>
+		<div id="PERSON_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			<strong>###PERSON_NAME###</strong>
+		</div>
+		<div id="PERSON_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			<strong>###PERSON_ADDRESS_DISPLAY###</strong>
+		</div>
+		<div id="PERSON_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+		<strong> ###PERSON_ZIP### ###PERSON_CITY###</strong>
+		</div>
+		<div id="PERSON_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			<strong>###PERSON_TELEPHONE###</strong>
+		</div>
+		<div id="text_PERSON_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			<strong>###PERSON_EMAIL###</strong><br />
+		</div>
+		<div id="text_email_BASKET_ORDERCONFIRMATION_TEMPLATE3">
+			###BASKET_PAYMENT_EMAIL_COMMENT###<br />
+		</div>
+	</div>
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+		<div id="text_lieferanschrift_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			###BASKET_DELIVERY_ADDRESS###
+		</div>
+		<div id="DELIVERY_SALUTATION_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_SALUTATION###</strong>
+		</div>
+		<div id="DELIVERY_NAME_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_NAME###</strong>
+		</div>
+		<div id="DELIVERY_ADDRESS_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_ADDRESS_DISPLAY###</strong>
+		</div>
+		<div id="DELIVERY_ZIP_CITY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong> ###DELIVERY_ZIP### ###DELIVERY_CITY###</strong>
+		</div>
+		<div id="DELIVERY_TELEPHONE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_TELEPHONE###</strong>
+		</div>
+		<div id="DELIVERY_EMAIL_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###DELIVERY_EMAIL###</strong><br />
+		</div>
+
+		<div id="text_DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###BASKET_PAYMENT_SHIPPING_DATE###</strong>
+		</div>
+		<div id="DELIVERY_DESIRED_DATE_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			###DELIVERY_DESIRED_DATE###
+		</div>
+		<div id="text_DELIVERY_NOTE_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			<strong>###BASKET_PAYMENT_COMMENT###</strong>
+		</div>
+		<div id="DELIVERY_NOTE_DISPLAY_BASKET_ORDERCONFIRMATION_TEMPLATE4">
+			 ###DELIVERY_NOTE_DISPLAY###
+		</div>
+	</div>
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE5">
+		<div id="text_versand_BASKET_ORDERCONFIRMATION_TEMPLATE5">
+			###BASKET_SHIPPING_HANDLING###
+		</div>
+		<div id="SHIPPING_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE5">
+			###SHIPPING_SELECTOR###
+		</div>
+		<div id="PRICE_SHIPPING_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE5">
+			 ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+		</div>
+	</div>
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE6">
+		<div id="text_zahlungsweise_BASKET_ORDERCONFIRMATION_TEMPLATE6">
+			###BASKET_PAYMENT###<br />
+		</div>
+		<div id="PAYMENT_SELECTOR_BASKET_ORDERCONFIRMATION_TEMPLATE6">
+			###PAYMENT_SELECTOR###
+		</div>
+		<div id="TAX_INCL_EXCL_BASKET_ORDERCONFIRMATION_TEMPLATE6">
+			###PRICE_PAYMENT_TAX### ###P_CURRENCY###
+		</div>
+	</div>
+
+	<div class="floatbox_BASKET_ORDERCONFIRMATION_TEMPLATE7">
+		<div id="text_PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7">
+			###BASKET_HEADER_TOTAL###
+		</div>
+		<div id="PRICE_TOTAL_BASKET_ORDERCONFIRMATION_TEMPLATE7" style="white-space:nowrap;">
+			 ###PRICE_VOUCHERTOTAL_TAX### ###P_CURRENCY###
+		</div>
+		<div class="text_PRICE_ONLY_TAX_BASKET_ORDERCONFIRMATION_TEMPLATE7">
+			<div id="text_TAX_BASKET_PAYMENT_TEMPLATE7">
+				 (###INCLUDED### ###VAT###&nbsp;
+			</div>
+			<div id="PRICE_TAX_BASKET_PAYMENT_TEMPLATE7">
+				###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###)
+			</div>
+		</div>
+
+	<div class="text_regards_BASKET_ORDERCONFIRMATION_TEMPLATE">
+		<p> <br />###SELLERS_SALUTATION###</p>
+		<p><b>###SELLERS_COMPANY###</b><br />
+		###SELLERS_NAME###<br />
+		###SELLERS_ADDRESS###<br />
+		###SELLERS_CITY###<br />
+		###SELLERS_COUNTRY###</p>
+		<p>###SELLERS_PHONE###<br />
+		###SELLERS_FAX###<br />
+		###SHOPADMIN_EMAIL###<br />
+		###DOMAIN###</p>
+		<p>###SELLERS_HRB###<br />
+		###SELLERS_EXECUTIVE###<br />
+		###SELLERS_VAT_ID###<br />
+		 </p>
+
+
+	</div>
+
+
+<!-- ###BASKET_ORDERCONFIRMATION_TEMPLATE### end -->
+
+<h3>EMAIL_PLAINTEXT_TEMPLATE</h3><em>Subpart used as template for the order-emails.<br />First line is used as subject for the mail.<br />
+</em>
+<!-- ###EMAIL_PLAINTEXT_TEMPLATE### begin
+Subpart used as template for the order-emails
+First line is used as subject for the mail.
+-->
+###ORDER_CONFIRMATION### ###SELLERS_COMPANY### ####ORDER_UID###
+
+###ORDER_CONFIRMATION_COMPLETE### ####ORDER_UID###
+
+###ORDER_CONFIRMATION_YOUR_ORDER###
+
+1) ###BASKET_HEADER_ITEM###:
+<!-- ###ITEM_CATEGORY_AND_ITEMS### --><!-- ###ITEM_LIST### begin --><!-- ###ITEM_SINGLE### begin-->
+###LIST_ITEM_NUMBER###: ###PRODUCT_ITEMNUMBER###
+###PRODUCT_TITLE###
+###BASKET_HEADER_QUANTITY###: ###FIELD_QTY### (###EINZELPREIS### ###PRODUCT_PRICE### ###P_CURRENCY###) ###BASKET_HEADER_TOTAL### ###PRICE_VOUCHERGOODSTOTAL_TAX#### ###P_CURRENCY###
+<!-- ###ITEM_SINGLE### end --><!-- ###ITEM_LIST### end --><!-- ###ITEM_CATEGORY_AND_ITEMS### end -->
+2) ###BASKET_BILLING_ADDRESS###:
+###PERSON_SALUTATION###
+###PERSON_NAME###
+###PERSON_ADDRESS###
+###PERSON_ZIP### ###PERSON_CITY###
+
+###BASKET_PHONE###: ###PERSON_TELEPHONE###
+###BASKET_EMAIL###: ###PERSON_EMAIL###
+
+###BASKET_VAT_ID###: ###PERSON_TT_PRODUCTS_VAT###
+
+<!-- ###MESSAGE_SHIPPING_40### -->###BASKET_VAT_ID### ###PERSON_TT_PRODUCTS_VAT###<!-- ###MESSAGE_SHIPPING_40### -->
+3) ###BASKET_DELIVERY_ADDRESS###:
+
+###DELIVERY_SALUTATION###
+###DELIVERY_NAME###
+###DELIVERY_ADDRESS###
+###DELIVERY_ZIP### ###DELIVERY_CITY###
+
+###BASKET_PHONE###: ###DELIVERY_TELEPHONE###
+###BASKET_EMAIL###: ###DELIVERY_EMAIL###
+
+4) ###BASKET_PAYMENT_SHIPPING_DATE###
+
+###DELIVERY_DESIRED_DATE###
+
+5) ###BASKET_PAYMENT_COMMENT###
+
+###DELIVERY_NOTE_DISPLAY###
+
+6) ###BASKET_SHIPPING_HANDLING###
+
+###LIST_ITEM_PRICE### ###PRICE_SHIPPING_TAX### ###P_CURRENCY###
+
+7) ###BASKET_PAYMENT###
+
+###PAYMENT_TITLE###
+###LIST_ITEM_PRICE### ###PRICE_PAYMENT_TAX### ###P_CURRENCY###
+
+###BASKET_PAYMENT_TOTAL### ________________________  (###INCLUDED### ###VAT### ###PRICE_TOTAL_ONLY_TAX### ###P_CURRENCY###) ###PRICE_VOUCHERGOODSTOTAL_TAX### ###P_CURRENCY###
+
+Gutscheincode: ###VALUE_VOUCHERCODE###
+<!-- ###MESSAGE_PAYMENT_20### begin -->
+###ORDER_CONFIRMATION_20_TEXT###
+
+###ORDER_CONFIRMATION_20_OWNER###
+###ORDER_CONFIRMATION_20_ACCOUNT###
+###ORDER_CONFIRMATION_20_BANK_NO###
+###ORDER_CONFIRMATION_20_BANK###
+
+###ORDER_CONFIRMATION_20_IBAN###
+###ORDER_CONFIRMATION_20_BIC###
+<!-- ###MESSAGE_PAYMENT_20### end -->
+
+<!-- ###MESSAGE_PAYMENT_60### begin -->
+###ORDER_CONFIRMATION_60_TEXT###
+
+###ORDER_CONFIRMATION_20_OWNER###
+###ORDER_CONFIRMATION_20_ACCOUNT###
+###ORDER_CONFIRMATION_20_BANK_NO###
+###ORDER_CONFIRMATION_20_BANK###
+
+###ORDER_CONFIRMATION_20_IBAN###
+###ORDER_CONFIRMATION_20_BIC###
+<!-- ###MESSAGE_PAYMENT_60### end -->
+
+###ORDER_CONFIRMATION_THANKS###
+
+###SELLERS_SALUTATION###
+
+###SELLERS_COMPANY###
+###SELLERS_NAME###
+###SELLERS_ADDRESS###
+###SELLERS_CITY###
+###SELLERS_COUNTRY###
+
+###SELLERS_PHONE###
+###SELLERS_FAX###
+###SHOPADMIN_EMAIL###
+###DOMAIN###
+
+###SELLERS_HRB###
+###SELLERS_EXECUTIVE###
+###SELLERS_VAT_ID###
+
+
+
+
+
+<!-- ###EMAIL_PLAINTEXT_TEMPLATE### end -->
+
+
